@@ -25,7 +25,7 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                Категории
+                    <div class="col-12">Категории</div>
                 </div>
                 <!-- /.row -->
             </div><!-- /.container-fluid -->
