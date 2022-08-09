@@ -10,6 +10,6 @@ class IndexController extends Controller
     public function __invoke(){
 
         $posts = Post::all();
-        return view('admin.category.index', compact('posts'));
+        return view('admin.post.index', compact('posts'));
     }
 }

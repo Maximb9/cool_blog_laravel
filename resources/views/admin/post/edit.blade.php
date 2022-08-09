@@ -26,7 +26,7 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-12">
-                        <form action="{{ route('admin.post.update', $category->id) }}" method="POST" class="w-25">
+                        <form action="{{ route('admin.post.update', $post->id) }}" method="POST" class="w-25">
                             @csrf
                             @method('PATCH')
                             <div class="form-group">
