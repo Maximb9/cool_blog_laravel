@@ -66,6 +66,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label>Select</label>
+                                <select class="form-control">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                    <option>option 5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
                                 <input type="submit" class="btn btn-primary" value="Добавить">
                             </div>
                         </form>
