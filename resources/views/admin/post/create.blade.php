@@ -80,6 +80,18 @@
                                 </select>
                             </div>
                             <div class="form-group">
+                                <label>Теги</label>
+                                <select class="select2" multiple="multiple" data-placeholder="<Выберите теги>" style="width: 100%;">
+                                    <option>Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
                                 <input type="submit" class="btn btn-primary" value="Добавить">
                             </div>
                         </form>
