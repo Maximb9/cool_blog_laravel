@@ -75,20 +75,18 @@
                                 <label>Выберите категорию</label>
                                 <select name="category_id" class="form-control">
                                     @foreach($categories as $category)
-                                    <option value="{{ $category->id }}" {{ $category->id == old('category_id') ? 'selected' : '' }}>{{ $category->title }}</option>
+                                        <option
+                                            value="{{ $category->id }}" {{ $category->id == old('category_id') ? 'selected' : '' }}>{{ $category->title }}</option>
                                     @endforeach
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label>Теги</label>
-                                <select class="select2" multiple="multiple" data-placeholder="<Выберите теги>" style="width: 100%;">
-                                    <option>Alabama</option>
-                                    <option>Alaska</option>
-                                    <option>California</option>
-                                    <option>Delaware</option>
-                                    <option>Tennessee</option>
-                                    <option>Texas</option>
-                                    <option>Washington</option>
+                                <select class="select2" name="tag_ids[]" multiple="multiple" data-placeholder="<Выберите теги>"
+                                        style="width: 100%;">
+                                    @foreach($tags as $tag)
+                                        <option value="{{ $tag->id }}">{{ $tag->title }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="form-group">
