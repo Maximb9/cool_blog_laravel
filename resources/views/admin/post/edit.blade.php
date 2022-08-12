@@ -26,19 +26,18 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-12">
-                        {{ $posts->id }}
-{{--                        <form action="{{ route('admin.post.update', $post->id) }}" method="POST" class="w-25">--}}
-{{--                            @csrf--}}
-{{--                            @method('PATCH')--}}
-{{--                            <div class="form-group">--}}
-{{--                                <input type="text" class="form-control" name="title" placeholder="Название поста"--}}
-{{--                                value="{{ $post->title }}">--}}
-{{--                                @error('title')--}}
-{{--                                <div class="text-danger">Это поле необходимо для заполнения</div>--}}
-{{--                                @enderror--}}
-{{--                            </div>--}}
-{{--                            <input type="submit" class="btn btn-primary" value="Обновить">--}}
-{{--                        </form>--}}
+                        <form action="{{ route('admin.post.update', $post->id) }}" method="POST" class="w-25">
+                            @csrf
+                            @method('PATCH')
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="title" placeholder="Название поста"
+                                value="{{ $post->title }}">
+                                @error('title')
+                                <div class="text-danger">Это поле необходимо для заполнения</div>
+                                @enderror
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Обновить">
+                        </form>
                     </div>
                 </div>
                 <!-- /.row -->

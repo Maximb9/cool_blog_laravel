@@ -10,7 +10,6 @@ class EditController extends Controller
     public function __invoke(Post $post){
 
         $posts = Post::all();
-
-        return view('admin.post.edit', compact('posts'));
+        return view('admin.post.edit', compact('post'));
     }
 }
