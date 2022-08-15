@@ -46,7 +46,7 @@
                                     </tr>
                                     <tr>
                                         <td>Название</td>
-                                        <td>{{ $user->title }}</td>
+                                        <td>{{ $user->name }}</td>
                                     </tr>
                                     </tbody>
                                 </table>

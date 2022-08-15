@@ -9,7 +9,7 @@
                 <a href="{{ route('admin.user.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        Посты
+                       Пользователи
                     </p>
                 </a>
             </li>
