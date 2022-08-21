@@ -11,6 +11,6 @@ class EditController extends Controller
     public function __invoke(Tag $tag){
 
         $tags = Tag::all();
-        return view('admin.tag.edit', compact('tag'));
+        return view('admin.tag.edit', compact('tag', 'tags'));
     }
 }
