@@ -18,6 +18,11 @@ Route::group(['namespace' => 'Main'], function () {
     Route::get('/', 'IndexController');
 });
 
+Route::group(['namespace' => 'personal', 'prefix' => 'personal', 'middleware' => ['auth', 'admin', 'verified']], function () {
+    Route::group(['namespace' => 'Main'], function () {
+        Route::get('/', 'IndexController')->name('personal.main.index');
+    });
+});
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'admin', 'verified']], function () {
     Route::group(['namespace' => 'Main'], function () {
