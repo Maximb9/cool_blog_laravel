@@ -42,7 +42,7 @@
                                             <td>{{ $comment->id }}</td>
                                             <td>{{ $comment->message }}</td>
                                             <td class="text-center"><a class="text-success"
-                                                                       href="{{ route('admin.post.edit', $comment->id) }}"><i
+                                                                       href="{{ route('personal.comment.edit', $comment->id) }}"><i
                                                         class="fas fa-pencil-alt"></i></a></td>
                                             <td class="text-center">
                                                 <form action="{{ route('personal.liked.delete', $comment->id) }}"
