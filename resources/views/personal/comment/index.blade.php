@@ -45,7 +45,7 @@
                                                                        href="{{ route('personal.comment.edit', $comment->id) }}"><i
                                                         class="fas fa-pencil-alt"></i></a></td>
                                             <td class="text-center">
-                                                <form action="{{ route('personal.liked.delete', $comment->id) }}"
+                                                <form action="{{ route('personal.comment.delete', $comment->id) }}"
                                                       method="POST">
                                                     @csrf
                                                     @method('DELETE')
