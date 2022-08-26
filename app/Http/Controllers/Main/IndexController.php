@@ -13,6 +13,8 @@ class IndexController extends Controller
 
         $posts = Post::paginate(6);
         $randomPosts = Post::get()->random(4);
+        $likedPosts = Post::withCount('likedUsers')->get();
+        dd($likedPosts);
         return view('main.index', compact('posts', 'randomPosts'));
     }
 }
