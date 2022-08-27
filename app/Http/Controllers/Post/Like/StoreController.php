@@ -13,6 +13,6 @@ class StoreController extends Controller
     {
         auth()->user()->likedPosts()->toggle($post->id);
 
-        return redirect()->route('post.index', $post->id);
+        return redirect()->back();
     }
 }
