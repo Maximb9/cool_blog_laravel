@@ -25,6 +25,10 @@ Route::group(['namespace' => 'Post', 'prefix' => 'posts'], function () {
     Route::group(['namespace' => 'Comment', 'prefix' => '{post}/comments'], function () {
         Route::post('/', 'StoreController')->name('post.comment.store');
     });
+
+    Route::group(['namespace' => 'Like', 'prefix' => '{post}/likes'], function () {
+        Route::post('/', 'StoreController')->name('post.like.store');
+    });
 });
 
 Route::group(['namespace' => 'personal', 'prefix' => 'personal', 'middleware' => ['auth', 'verified']], function () {
