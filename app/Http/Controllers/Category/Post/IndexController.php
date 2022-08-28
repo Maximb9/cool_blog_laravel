@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Category;
+namespace App\Http\Controllers\Category\Post;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
@@ -10,9 +10,9 @@ use function Doctrine\Common\Cache\Psr6\get;
 
 class IndexController extends Controller
 {
-    public function __invoke()
-    {
-        $categories = Category::all();
-        return view('category.index', compact('categories'));
+    public function __invoke(Category $category){
+
+        $posts = $category->posts()->paginate(6);
+        return view('category.post.index', compact('posts'));
     }
 }
